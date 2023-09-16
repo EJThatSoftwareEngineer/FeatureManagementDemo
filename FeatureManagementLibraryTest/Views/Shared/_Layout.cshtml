@@ -23,46 +23,53 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                       
 
-                            <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FeatureAll">All Features Pages Check</a>
+
+                        <li class="nav-item rounded @((Context.Request.RouteValues["action"] as string == "FeatureAll") ? "bg-primary" : "")">
+                            <a class="nav-link active text-dark @((Context.Request.RouteValues["action"] as string == "FeatureAll") ? "text-white" : "")" asp-area="" asp-controller="Home" asp-action="FeatureAll">All Features Pages Check</a>
                             </li>
                    
 
                         <feature name=@nameof(FeatureManagement.FeatureA)>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FeatureA">Feature A</a>
+                            <li class="nav-item rounded @((Context.Request.RouteValues["action"] as string == "FeatureA") ? "bg-primary" : "")">
+                                <a class="nav-link text-dark @((Context.Request.RouteValues["action"] as string == "FeatureA") ? "text-white" : "")" asp-area="" asp-controller="Home" asp-action="FeatureA">Feature A</a>
                             </li>
                         </feature>
 
                         <feature name=@nameof(FeatureManagement.FeatureB)>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FeatureB">Feature B</a>
+                            <li class="nav-item rounded @((Context.Request.RouteValues["action"] as string == "FeatureB") ? "bg-primary" : "")">
+                                <a class="nav-link text-dark @((Context.Request.RouteValues["action"] as string == "FeatureB") ? "text-white" : "")" asp-area="" asp-controller="Home" asp-action="FeatureB">Feature B</a>
                             </li>
                         </feature>
 
                         <feature name=@nameof(FeatureManagement.FeatureC)>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FeatureC">Feature C</a>
+                            <li class="nav-item rounded @((Context.Request.RouteValues["action"] as string == "FeatureC") ? "bg-primary" : "")">
+                                <a class="nav-link text-dark @((Context.Request.RouteValues["action"] as string == "FeatureC") ? "text-white" : "")" asp-area="" asp-controller="Home" asp-action="FeatureC">Feature C</a>
                             </li>
                         </feature>
 
                         <feature name=@nameof(FeatureManagement.FeatureD)>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FeatureD">Feature D</a>
+                            <li class="nav-item rounded  @((Context.Request.RouteValues["action"] as string == "FeatureD") ? "bg-primary" : "")">
+                                <a class="nav-link text-dark @((Context.Request.RouteValues["action"] as string == "FeatureD") ? "text-white" : "")" asp-area="" asp-controller="Home" asp-action="FeatureD">Feature D</a>
                             </li>
                         </feature>
 
                         <feature name=@nameof(FeatureManagement.FeatureE)>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FeatureE">Feature E</a>
+                            <li class="nav-item rounded @((Context.Request.RouteValues["action"] as string == "FeatureE") ? "bg-primary" : "")">
+                                <a class="nav-link text-dark @((Context.Request.RouteValues["action"] as string == "FeatureE") ? "text-white" : "")" asp-area="" asp-controller="Home" asp-action="FeatureE">Feature E</a>
                             </li>
                         </feature>
 
+
+                        <feature name=@nameof(FeatureManagement.FeatureF)>
+                            <li class="nav-item rounded @((Context.Request.RouteValues["action"] as string == "FeatureF") ? "bg-primary" : "")">
+                                <a class="nav-link text-dark @((Context.Request.RouteValues["action"] as string == "FeatureF") ? "text-white" : "")" asp-area="" asp-controller="Home" asp-action="FeatureF">Feature F</a>
+                            </li>
+                        </feature>
+@* 
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                        </li> *@
 
 
                      @*    <feature name=@nameof(FeatureManagement.FeatureA) negate="true">

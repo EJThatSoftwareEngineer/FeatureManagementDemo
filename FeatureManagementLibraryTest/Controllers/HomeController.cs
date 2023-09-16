@@ -54,7 +54,7 @@ namespace FeatureManagementLibraryTest.Controllers
             return View("FeatureD");
         }
 
-        [FeatureGate(FeatureManagement.FeatureD)]
+        [FeatureGate(FeatureManagement.FeatureE)]
         public async Task<IActionResult> FeatureE()
         {
             return View("FeatureE");
