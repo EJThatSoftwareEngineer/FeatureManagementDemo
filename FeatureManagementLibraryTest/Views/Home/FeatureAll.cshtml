@@ -1,0 +1,76 @@
+﻿@using FeatureManagementLibraryTest.Features;
+
+<ul class="list-group">
+    <feature name="@nameof(FeatureManagement.FeatureA)">
+        <li class="list-group-item">
+            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="FeatureA">Feature A is active</a>
+        </li>
+    </feature>
+
+    <feature name="@nameof(FeatureManagement.FeatureA)" negate="true">
+        <li class="list-group-item">
+            <a class="nav-link text-dark">Feature A is inactive</a>
+        </li>
+    </feature>
+
+    <feature name="@nameof(FeatureManagement.FeatureB)">
+        <li class="list-group-item">
+            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="FeatureB">Feature B is active</a>
+        </li>
+    </feature>
+
+    <feature name="@nameof(FeatureManagement.FeatureB)" negate="true">
+        <li class="list-group-item">
+            <p>Feature B is inactive</p>
+        </li>
+    </feature>
+
+    <feature name="@nameof(FeatureManagement.FeatureC)">
+        <li class="list-group-item">
+            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="FeatureC">Feature C is active</a>
+        </li>
+    </feature>
+
+    <feature name="@nameof(FeatureManagement.FeatureC)" negate="true">
+        <li class="list-group-item">
+            <p>Feature C is inactive</p>
+        </li>
+    </feature>
+
+    <feature name="@nameof(FeatureManagement.FeatureD)">
+        <li class="list-group-item">
+            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="FeatureD">Feature D is active</a>
+        </li>
+    </feature>
+
+    <feature name="@nameof(FeatureManagement.FeatureD)" negate="true">
+        <li class="list-group-item">
+            <p>Feature D is inactive</p>
+        </li>
+    </feature>
+
+    <feature name="@nameof(FeatureManagement.FeatureE)">
+        <li class="list-group-item">
+            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="FeatureE">Feature E is active</a>
+        </li>
+    </feature>
+
+    <feature name="@nameof(FeatureManagement.FeatureE)" negate="true">
+        <li class="list-group-item">
+            <a class="nav-link text-dark">Feature E is inactive</a>
+        </li>
+    </feature>
+
+    <feature name="@nameof(FeatureManagement.FeatureF)">
+        <li class="list-group-item">
+            <a class="nav-link text-primary" asp-area="" asp-controller="Home" asp-action="FeatureF">Feature F is active</a>
+        </li>
+    </feature>
+
+    <feature name="@nameof(FeatureManagement.FeatureF)" negate="true">
+        <li class="list-group-item">
+            <a class="nav-link text-dark">Feature F is inactive</a>
+        </li>
+    </feature>
+
+</ul>
